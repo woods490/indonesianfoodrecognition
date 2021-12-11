@@ -42,5 +42,5 @@ def get_output():
 	return render_template("index.html", prediction = p, img_path = img_path)
 
 if __name__ =='__main__':
-	#app.debug = True
-	app.run(debug = True)
+	app.debug = True
+	app.run()
