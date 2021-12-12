@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Classification</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>Indonesian Foood Recognition</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-sm">
+      <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="{{ url_for('main') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <div class="container-fluid desc">
+        <div class="gambar_ristek d-flex justify-content-center">
+            <div class="foto_ristek">
+                <img src="{{ url_for('static', filename='asset/Ristekdikti.png') }}" alt="Microcredential Associate Data Scientist">
+            </div>
+        </div>
+        <div class="deskripsi">
+            <p class="tulisdesk">Model ini dibuat untuk mengidentifikasi macam macam makanan Indonesia dan sebagai proyek akhir 
+                program Microcredential Associate Data Scientist yang diselenggarakan oleh Kemenristekdikti. Dibuat dengan menggunakan
+                library ANN Tensorflow. Saat ini hanya makanan ayam geprek, ayam bakar, mie goreng, nasi goreng, dan sate yang dapat diidentifikasi 
+                serta masih mengalami gejala underfitting. 
+                Model akan di-update dengan melakukan retraining
+                seiring berjalannya waktu.
+            </p>
+        </div>
+        <div class="madeby">
+            <h4 class="buatan">
+                This model is proudly made and deployed by:
+            </h4>
+        </div>
+        <div class="d-sm-flex flex-row">
+            <div class="foto_azhar mt-5 justify-content-center">
+                <img src="{{ url_for('static', filename='asset/Azhar_Yundha_Ramadhan.jpg') }}" class="azhar animate__fadeInLeft" alt="Azhar">
+            </div>
+            <div class="list_azhar">
+                <ul style="list-style-type:none;" class="list_bio">
+                    <li>
+                        Nama: Azhar Yundha Ramadhan
+                    </li>
+                    <li>
+                        Universitas: Telkom University
+                    </li>
+                    <li>
+                        Jurusan: Teknik Elektro
+                    </li>
+                    <li>
+                        <a class="link-git" href="https://github.com/ramadhanaraz"> Github </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-sm-flex flex-row">
+            <div class="foto_aga mt-5 justify-content-center">
+                <img src="{{ url_for('static', filename='asset/Gentur_Rizky_Arganta.png') }}" class="aga animate__fadeInLeft" alt="Aga">
+            </div>
+            <div class="list_aga">
+                <ul style="list-style-type:none;" class="list_bio">
+                    <li>
+                        Nama: Gentur Rizky Arganta
+                    </li>
+                    <li>
+                        Universitas: Universitas Airlangga
+                    </li>
+                    <li>
+                        Jurusan: Sistem Informasi
+                    </li>
+                    <li>
+                        <a class="link-git" href="https://github.com/woods490"> Github </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </div>
+</body>

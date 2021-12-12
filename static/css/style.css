@@ -1,0 +1,106 @@
+@font-face{
+    font-family:'FontMain';
+    src: url('../Helvetica/Helvetica.ttf')
+}
+
+
+body{
+    font-family: 'FontMain' !important;
+}
+
+.nav-link{
+    font-size: 35px;
+    color: white;
+    font-weight: bolder;
+}
+
+.navbar{
+    background-image: url('../asset/batiknav.png');
+    background-size: cover;
+    opacity: 0.75;
+}
+
+.hh{
+    width: 40%;
+}
+
+.isi{
+    background: #aa6d34;
+}
+
+.sapmit{
+    background-color: black !important;
+    border-color: black !important;
+    margin-bottom: 45%;
+}
+
+.labelup{
+    color: black;
+    font-weight: bold;
+}
+
+.tulpred{
+    color:black;
+}
+
+.desc{
+    background: #aa6d34;
+}
+
+.tulisdesk{
+    text-align: justify;
+    padding-top: 3%;
+    font-weight: bold;
+}
+
+.madeby{
+    font-weight: bold;
+}
+
+.foto_azhar{
+    width: 25%;
+}
+
+.azhar{
+    width: 100%;
+}
+
+.list_azhar{
+    width: auto;
+    margin-top: 5%;
+}
+
+.list_bio{
+    font-size:larger;
+    font-weight: bold;
+}
+
+.buatan{
+    font-weight: bold;
+}
+
+.link-git{
+    color:#252529;
+}
+
+.foto_aga{
+    width: 25%;
+    margin-bottom: 5%;
+}
+
+.aga{
+    width:100%;
+}
+
+.list_aga{
+    width: auto;
+    margin-top: 5%;
+}
+
+.gambar_ristek{
+    padding-top: 3%;
+}
+
+.predss{
+    padding-top: 5%;
+}

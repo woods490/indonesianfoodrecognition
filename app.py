@@ -29,6 +29,9 @@ def predict_label(img_path):
 def main():
 	return render_template("index.html")
 
+@app.route("/about")
+def about():
+	return render_template("about.html")
 
 @app.route("/submit", methods = ['GET', 'POST'])
 def get_output():
